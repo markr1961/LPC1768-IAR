@@ -6,8 +6,8 @@
  *
  **/
 
-#include "drivers/spi_drv.h"
-#include "drivers/common.h"
+#include "spi_drv.h"
+#include "common.h"
 
 void SPI_Init(int frequency, int bitData) { // TODO: bitData to the SPI->SPCR
     SPI_POWER_ON;

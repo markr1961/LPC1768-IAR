@@ -5,11 +5,12 @@
  * @date     15 Jun. 2017
  *
  **/
-#include "drivers/i2c_drv.h"
-#include "devices/timer_dev.h"
+
+#include "main.h"
+#include "i2c_drv.h"
+#include "timer_drv.h"
 
 void I2C0_Init(void);
-
 
 
 static int check_status(void) {
@@ -57,8 +58,6 @@ static int I2C0_Select_Slave(char address, int operation) {
 
 	return retVal;
 }
-
-
 
 void I2C0_Init(void) {
 	SET_I2C0_POWER_OFF;

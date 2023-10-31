@@ -7,9 +7,9 @@
  **/
 
 #include <string.h>
-
-#include "drivers/flash_drv.h"
-#include "devices/timer_dev.h"
+#include "main.h"
+#include "flash_drv.h"
+#include "timer_drv.h"
 
 // TODO: find another solution
 static char erase_buffer[FLASH_PAGE_SIZE];
@@ -49,7 +49,8 @@ void FLASH_Init(void) {
 }
 
 unsigned int FLASH_WritePage(void *dstAddr, void *srcAddr) {
-    int retVal = I2C0_Start_Comunication(0, DEVICE_ADDR, WRITE_OPERATION);
+    int retVal;
+    retVal = I2C0_Start_Comunication( 0, DEVICE_ADDR, WRITE_OPERATION);
     if(retVal != I2C_OPERATION_OK) {
         return FLASH_OPER_FAIL;
     }
@@ -93,7 +94,7 @@ unsigned int FLASH_ReadPage(void *dstAddr, void *srcAddr) {
         return FLASH_OPER_FAIL;
     }
     // Begin read operation
-    retVal = I2C0_Start_Comunication(1, DEVICE_ADDR, READ_OPERATION);
+    retVal = I2C0_Start_Comunication( 1, DEVICE_ADDR, READ_OPERATION);
     if(retVal != I2C_OPERATION_OK) {
         return FLASH_OPER_FAIL;
     }

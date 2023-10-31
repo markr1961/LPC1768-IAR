@@ -301,7 +301,15 @@ int main(void)
 }
 
 uint32_t u32sysTick;
+
 void SysTick_Handler(void)
 {
   u32sysTick++;
+}
+
+void Delay(uint32_t delay)
+{
+  uint32_t start_systick = u32sysTick;
+  while (u32sysTick < delay + start_systick)
+    ;
 }

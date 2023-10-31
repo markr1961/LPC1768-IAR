@@ -6,9 +6,9 @@
  *
  **/
 
-#include "drivers/gpio_drv.h"
-#include "drivers/pwm_drv.h"
-#include "drivers/common.h"
+#include "gpio_drv.h"
+#include "pwm_drv.h"
+#include "common.h"
 
 static int _dutyCycle;
 

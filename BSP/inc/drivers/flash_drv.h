@@ -9,8 +9,10 @@
 #ifndef __FLASH_DRV_H__
 #define __FLASH_DRV_H__
 
+#include <stdint.h>
+
 #include "LPC17xx.h"
-#include "drivers/i2c_drv.h"
+#include "i2c_drv.h"
 
 /** @addtogroup DRIVERS
 * @{
@@ -21,11 +23,11 @@
  */
 
 /* Geral */
-#define FLASH_SIZE                                      (8 * 1024)      //!< Bytes - 8KB
-#define DEVICE_ADDR                                     (0b1010000)     //!< EEPROM addr
-#define FLASH_DEFAULT_VALUE                             0xFF            //!< Flash value after erase position
+#define FLASH_SIZE                                      (8 * 1024)      // Bytes - 8KB
+#define DEVICE_ADDR                                     0x50  //(0b1010000)       // EEPROM addr
+#define FLASH_DEFAULT_VALUE                             0xFF            // Flash value after erase position
 
-#define FLASH_PAGE_SIZE                                 (64)            //!< 64 Bytes
+#define FLASH_PAGE_SIZE                                 (64)            // 64 Bytes
 #define FLASH_BASE_ADDR                                 0x0000U
 
 

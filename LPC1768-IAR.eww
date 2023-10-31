@@ -2,17 +2,17 @@
 
 <workspace>
   <project>
-    <path>$WS_DIR$\LPC1768-LAR.ewp</path>
+    <path>$WS_DIR$\LPC1768-IAR.ewp</path>
   </project>
   <batchBuild>
     <batchDefinition>
       <name>All</name>
       <member>
-        <project>LPC1768-LAR</project>
+        <project>LPC1768-IAR</project>
         <configuration>Flash Debug</configuration>
       </member>
       <member>
-        <project>LPC1768-LAR</project>
+        <project>LPC1768-IAR</project>
         <configuration>RAM Debug</configuration>
       </member>
     </batchDefinition>

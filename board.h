@@ -134,7 +134,7 @@
 #define TEMP_PIN_SEL    PINSEL1_bit.P0_24
 
 #else
-#error define type of the board
+  #error define type of the board
 #endif
 
 // PCLK offset

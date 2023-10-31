@@ -6,7 +6,7 @@
  *
  **/
 
-#include "drivers/rtc_drv.h"
+#include "rtc_drv.h"
 
 
 static void set_time(struct tm *dateTime);

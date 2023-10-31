@@ -6,10 +6,10 @@
  *
  **/
 
-#include "drivers/ethernet_drv.h"
-#include "devices/timer_dev.h"
+#include "ethernet_drv.h"
+#include "timer_drv.h"
 #include <string.h>
-
+#include "main.h"
 //#define DEBUG_ETH
 
 static eth_addr mAddr;

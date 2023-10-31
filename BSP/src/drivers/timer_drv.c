@@ -8,12 +8,12 @@
 
 #include <limits.h>
 
-#include "drivers/timer_drv.h"
-#include "drivers/common.h"
+#include "timer_drv.h"
+#include "common.h"
 
 
 unsigned int calc_prescaler_value(unsigned int frequency) {
-    unsigned int retVal = SystemCoreClock / (frequency * 1.0);
+    unsigned int retVal = SystemCoreClock / frequency;
     return retVal;
 }
 

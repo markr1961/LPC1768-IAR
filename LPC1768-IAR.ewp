@@ -201,7 +201,7 @@
         </option>
         <option>
           <name>CCListCFile</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>CCListCMnemonics</name>
@@ -314,8 +314,9 @@
         </option>
         <option>
           <name>CCIncludePath2</name>
-          <state>$PROJ_DIR$\CMSIS_CORE_LPC17xx\Inc</state>
-          <state>$PROJ_DIR$\BSP\Inc</state>
+          <state>$PROJ_DIR$\BSP\inc\drivers</state>
+          <state>$PROJ_DIR$\CMSIS_CORE_LPC17xx\inc</state>
+          <state>$PROJ_DIR$</state>
         </option>
         <option>
           <name>CCStdIncCheck</name>
@@ -335,7 +336,7 @@
         </option>
         <option>
           <name>CCOptLevel</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>CCOptStrategy</name>
@@ -344,7 +345,7 @@
         </option>
         <option>
           <name>CCOptLevelSlave</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>CompilerMisraRules98</name>
@@ -599,15 +600,15 @@
         <option>
           <name>OOCOutputFormat</name>
           <version>3</version>
-          <state>0</state>
+          <state>3</state>
         </option>
         <option>
           <name>OCOutputOverride</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>OOCOutputFile</name>
-          <state></state>
+          <state>$TARGET_BPATH$.bin</state>
         </option>
         <option>
           <name>OOCCommandLineProducer</name>
@@ -615,7 +616,7 @@
         </option>
         <option>
           <name>OOCObjCopyEnable</name>
-          <state>0</state>
+          <state>1</state>
         </option>
       </data>
     </settings>
@@ -1930,11 +1931,80 @@
       <data/>
     </settings>
   </configuration>
+  <group>
+    <name>BoardFiles</name>
+    <group>
+      <name>include</name>
+      <excluded>
+        <configuration>RAM Debug</configuration>
+      </excluded>
+      <file>
+        <name>$PROJ_DIR$\BSP\inc\drivers\common.h</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\BSP\inc\drivers\ethernet_drv.h</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\BSP\inc\drivers\flash_drv.h</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\BSP\inc\drivers\gpio_drv.h</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\BSP\inc\drivers\i2c_drv.h</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\BSP\inc\drivers\pwm_drv.h</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\BSP\inc\drivers\rtc_drv.h</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\BSP\inc\drivers\spi_drv.h</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\BSP\inc\drivers\systick_drv.h</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\BSP\inc\drivers\timer_drv.h</name>
+      </file>
+    </group>
+    <group>
+      <name>source</name>
+      <file>
+        <name>$PROJ_DIR$\BSP\src\drivers\flash_drv.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\BSP\src\drivers\i2c_drv.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\BSP\src\drivers\pwm_drv.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\BSP\src\drivers\rtc_drv.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\BSP\src\drivers\spi_drv.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\BSP\src\drivers\timer_drv.c</name>
+      </file>
+    </group>
+  </group>
+  <file>
+    <name>$PROJ_DIR$\arm_comm.h</name>
+  </file>
+  <file>
+    <name>$PROJ_DIR$\board.h</name>
+  </file>
   <file>
     <name>$PROJ_DIR$\cstartup_M.s</name>
   </file>
   <file>
     <name>$PROJ_DIR$\main.c</name>
+  </file>
+  <file>
+    <name>$PROJ_DIR$\main.h</name>
   </file>
   <file>
     <name>$PROJ_DIR$\readme.txt</name>

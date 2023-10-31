@@ -13,9 +13,8 @@
  * @{
  */
 
-#include "drivers/gpio_drv.h"
+#include "gpio_drv.h"
 #include "common.h"
-
 
 
 #ifndef DRIVERS_I2C_DRV_H_
@@ -24,7 +23,7 @@
 #define PCONP_I2C0_BIT_SHIFT                (0x7)
 #define I2C0_PINSEL_MASK                    (0xF << 22)
 #define I2C0_PINSEL_FUNCTION                (0x5 << 22)
-//Bits
+// Bits
 #define I2C0_EN_BIT                         (0x1 << 6)
 #define I2C0_BIT_SI                         (0x1 << 3)
 #define I2C0_BIT_STA                        (0x1 << 5)

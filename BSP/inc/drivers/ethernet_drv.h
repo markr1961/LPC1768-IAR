@@ -18,7 +18,7 @@
 #define DRIVERS_ETHERNET_DRV_H_
 
 #include "LPC17xx.h"
-#include "drivers/gpio_drv.h"
+#include "gpio_drv.h"
 
 /* *******************  Constants  ******************** */
 #define DWORD                           8

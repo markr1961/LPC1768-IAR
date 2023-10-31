@@ -6,7 +6,7 @@
  *
  **/
 
-#include "drivers/systick_drv.h"
+#include "systick_drv.h"
 
 static unsigned int counter;
 
